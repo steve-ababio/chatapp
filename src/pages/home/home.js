@@ -9,7 +9,7 @@ const Homepage = ()=>{
         <div className="home-wrapper">
             <NavBar/>
             <main className="main-home-section">
-                <h1>CHAT SEAMLESSLY</h1>
+                <h1>CHAT APP</h1>
                 <div className="auth-btn-ctn">
                     <Link to="/login"><button className="auth-btn auth-login-btn">sign in</button></Link>
                     <Link to="/signup"><button className="auth-btn auth-signup-btn">sign up</button></Link>

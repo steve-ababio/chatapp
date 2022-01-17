@@ -22,12 +22,12 @@ const Signin = props =>{
 
    return(
        <div className='auth-ctn'>
-            <h1 class="auth-title"> please sign in</h1>
+            <h1 class="auth-title">please sign in</h1>
             <form className="auth-modal" >
                 <label className="auth-input-labels" htmlFor="username" >Username</label>
-                <input type="text" required id="username"  name="username" className="auth-form-inputs" onChange={props.handleUsername} autoComplete='username' />
+                <input type="text" required id="username" name="username" className="auth-form-inputs signin-form-ctrl" onChange={props.handleUsername} autoComplete='username' required />
                 <label className="auth-input-labels" htmlFor="password">Password</label>
-                <input type="password" required id="password" name="password" className="auth-form-inputs" onChange = {props.handlePassword} autoComplete='password' /> 
+                <input type="password" required id="password" name="password" className="auth-form-inputs signin-form-ctrl" onChange = {props.handlePassword} autoComplete='current-password' /> 
                 <button className={props.isloginprocessing ? "auth-submit-btn auth-btn-disabled":"auth-submit-btn"} disabled={props.isloginprocessing}  onClick={props.submitCredentials}>login</button>
             </form>
         </div>

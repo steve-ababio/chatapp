@@ -1,10 +1,11 @@
 .auth-ctn{
     --btn-disabled-bg-clr:rgba(99, 99, 99, 0.89);
     --btn-disabled-txt-clr:rgb(165, 165, 165);
-    --input-focus-border-clr:rgb(24, 121, 212);
+    --input-focus-outline-clr:rgb(24, 121, 212);
+    --auth-danger:rgb(223, 20, 20);
     --txt-white-clr:white;
-    height: 100%;
-    width: 100%;
+    block-size: 100%;
+    inline-size: 100%;
     background-color: rgb(34, 34, 34);
     display: flex;
     justify-content: center;
@@ -20,42 +21,55 @@
 {
     --auth-txt-font-size:1.2rem;
     --auth-input-color:grey;
-    height:100%;
-    width:100%;
+    block-size:100%;
+    inline-size:100%;
     display: flex;
     flex-direction:column ;
     justify-content: center;
     align-items: center;
-
 }
-.auth-form-inputs
-{
-    padding:0.8rem 0;
-    border:none;
+.auth-form-inputs,.auth-submit-btn{
+    inline-size:80%;
+    max-inline-size:21rem;
     font-size:var(--auth-txt-font-size);
-    margin-bottom:3rem;
+}
+.validation-msg{
+    margin-block-end:1.5rem;
+    inline-size:100%;
+    height: 1rem;
+    text-align: center;
+}
+
+.auth-form-inputs{
+    padding:0.8rem 0;
+    font-size:var(--auth-txt-font-size);
+    margin-block-end:0.35rem;   
+    margin-block-start: 0.35rem; 
     text-align: center;
     color:var(--auth-input-color);
-    width:80%;
-    max-width:25rem;
+    border:2px solid rgb(159, 167, 170);
+    border-radius:5px;
 }
-.auth-form-inputs:focus{
-    border:2px solid var(--input-focus-border-clr);
+.signin-form-ctrl{
+    margin-block-end: 2rem;
+}
+
+.auth-form-inputs:focus-visible,button:focus-visible{
+    outline:3.5px solid var(--input-focus-outline-clr);
 }
 .auth-form-inputs:first-child{
-    margin-top: 7rem;
+    margin-block-start: 7rem;
 }
+
 .auth-submit-btn
 {
-    background-color: rgb(11, 120, 184);
-    width:80%;
-    max-width:25rem;
+    background-color: rgb(243, 140, 23);
     padding:1rem 0;
-    color:var(--txt-white-clr);
-    font-size:var(--auth-txt-font-size);
-    margin-bottom: 7rem;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.61);
+    margin-block-start: 1rem;
+    margin-block-end: 7rem;
     cursor: pointer;
+    color:var(--txt-white-clr);
+    border-radius: 5px;
 }
 .auth-btn-disabled
 {
@@ -65,4 +79,12 @@
 .auth-input-labels{
     color:var(--txt-white-clr);
     font-weight: 400;
+    font-size: var(--auth-txt-font-size);
+}
+#password-validation{
+    color:var(--txt-white-clr);
+    font-size: var(--auth-txt-font-size);
+}
+input+ .validation-msg{
+    color:var(--auth-danger)
 }
