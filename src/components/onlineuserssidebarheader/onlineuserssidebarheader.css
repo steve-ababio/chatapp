@@ -1,0 +1,17 @@
+.chat-list-info{
+    padding:0.7rem 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:0 auto;
+    background-color: rgb(51, 65, 77);
+    color:white;
+    border-bottom:1px rgba(182, 182, 182, 0.479) solid; 
+}
+
+.logout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}

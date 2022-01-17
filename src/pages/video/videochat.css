@@ -1,0 +1,74 @@
+.remote-user-video-stream-ctn{   
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    display: none;
+}
+.remote-user-video-stream-ctn video{
+    height:100%;
+    object-fit: cover;
+    width:100%;
+}
+.show-video-stream{
+    display: block;
+}
+.video-chat-controls-ctn{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+.video-chat-controls{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;    
+    background-color:rgb(51, 65, 77); ;
+}
+
+.video-chat-control-btn-ctn{
+     width:4rem;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-chat-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+ }
+ button
+ {
+    outline:none;
+    border:none;
+ }
+ .video-chat-answer,.video-chat-call-terminate{
+    width:5.0rem;
+    height: 5.0rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-chat-call-terminate-btn, .video-chat-answer-btn{
+    width:3.5rem;
+    height:3.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-chat-call-terminate-btn
+{
+    background-color: red;
+}
+.video-chat-answer-btn{
+    background-color: rgb(21, 211, 116);
+}

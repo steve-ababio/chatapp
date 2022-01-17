@@ -1,0 +1,68 @@
+.online-users-sidebar-ctn{
+    height: inherit;
+    width:18rem;
+    background-color: rgba(196, 196, 196, 0.199);
+    border-right: 1px solid rgba(218, 218, 218, 0.466);
+    position:fixed;
+    top:0;
+    left:0;
+}
+.online-user-ctn
+{
+    /* background-color: hsl(0,100%,100%); */
+    margin:0 auto;
+    padding:0.5rem 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(156, 156, 156, 0.397); */
+}
+.online-user-indicator-ctn
+{
+    padding:0.3rem 0 0;
+    display:flex;
+    flex-grow:1;
+    justify-content: center;
+    align-items: center;
+}
+.online-user-indicator{
+    width:3.5rem;
+    height:3.5rem;
+    border-radius: 50%;
+    background-color: rgb(99, 212, 150);
+}
+.online-user-name-ctn
+{
+    display:flex;
+    flex-grow: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.online-user-name{
+    color:rgb(99, 99, 99);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.user-last-seen
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:grey;
+}
+.msg-count-indicator-show
+{
+    flex-grow: 1;
+    width:2.0rem;
+    height:1.5rem;
+    background-color: orange;
+    color:white;
+    font-size:1rem;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: 2.5rem;
+    margin-right: 0.6rem;
+    border-radius: 4px;
+}

@@ -1,0 +1,53 @@
+.home-wrapper
+{
+    min-width:100%;
+    min-height:100%;
+    display: flex;
+    flex-direction: column;
+    --section-txt-primary-color:rgb(233, 233, 233);
+    --login-btn-bg-color:coral;
+    --signup-btn-bg-color:rgb(9, 111, 179);
+    background-color:var(--bg-primary-color)
+}
+.main-home-section
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-home-section h1{
+    font-size: clamp(1.5rem,6vw,4rem);
+    color:var(--section-txt-primary-color)
+}
+.auth-btn-ctn{
+    width:70%;
+    display: flex;
+    margin-top:3rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+}
+.auth-btn
+{
+    width:15rem;
+    padding:1.2rem 0;
+    border:none;
+    outline:none;
+    appearance: none;
+    -webkit-appearance: none;
+    font-weight: 600;
+    font-size:1.25rem;
+    color:white;
+    cursor: pointer;
+    margin:0.8rem 0;
+}
+.auth-login-btn
+{
+    background-color: var(--login-btn-bg-color);
+}
+.auth-signup-btn
+{
+    background-color: var(--signup-btn-bg-color)
+}

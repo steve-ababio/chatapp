@@ -1,0 +1,107 @@
+.popup-chat-window-ctn
+{
+    box-shadow: 2px 2px 10px rgba(177, 177, 177, 0.562);
+    transform: scale(0);
+    transition:0.1s;    
+} 
+.show-popup-window
+{
+    transform: scale(1);
+}
+
+.popup-chat-window-title-ctn{
+    background-color: rgb(51, 65, 77);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.popup-chat-window-title
+{
+    width:90%;
+    margin:0 auto;
+    padding:0.50rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.popup-chat-window-userinfo
+{
+    margin: 0 auto;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.popup-chat-window-img
+{
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 50%;
+    display:inline-block;
+    background-color: rgb(138, 138, 138);
+    margin-right: 0.4rem;
+}
+.popup-chat-window-user-typing
+{
+    text-align: center;
+    flex-grow: 2;
+    color:white;
+    font-size:0.85rem;
+    font-weight: 400;
+}
+.popup-chat-window-username{
+   font-weight: 600;
+   font-size:1.0rem;
+   color:white;
+}
+.popup-chat-window-init-video-call{
+    cursor: pointer;
+}
+.popup-chat-window-active{
+    font-size:0.8rem;
+    color:rgb(231, 231, 231);
+    font-weight:500;
+}
+.popup-chat-window-collapse{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer
+}
+.popup-chat-txt-input-ctn
+{
+    position: relative;
+    padding:0.6rem 0;
+}
+.popup-chat-txt-input
+{
+    box-shadow: 0 2px 10px rgba(172, 172, 172, 0.466);
+    display: block;
+    margin:0 auto;
+    width:22rem;
+    padding:0.5rem 0;
+    border:none;
+    outline:none;
+    font-size: 1.2rem;
+    border-top:none;
+    background-color: rgb(255, 255, 255); 
+    text-indent: 1.4rem;
+    color:rgba(146, 146, 146, 0.61);;
+    border-radius: 15px;
+}
+.popup-chat-txt-input::placeholder{
+    text-indent: 1.4rem;
+    color:rgba(146, 146, 146, 0.61);
+}
+.popup-chat-snd-btn{
+    position: absolute;
+    bottom:14px;
+    right:1.0rem;
+}
+.popup-chat-txt-snd-btn
+{
+    border:none;
+    border-radius: 50%;
+    height:1.8rem;
+    width:1.8rem; 
+    cursor: pointer;
+    background-color: rgb(51, 65, 77);
+}

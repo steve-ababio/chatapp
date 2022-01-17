@@ -1,0 +1,48 @@
+.textchat-ctn{
+    height: 100%;
+    width:100%;
+    position: relative;
+}
+
+.popup-chat-window-grid{
+    position:absolute;
+    bottom:0px;
+    right:1rem;
+    display:grid;
+    justify-content: right;
+    grid-template-columns: repeat(auto-fit,23rem);
+    gap:0.7rem;
+    width: 100%;
+    z-index: 1000;
+}
+.minimized-window-ctn{
+    padding:0.8rem;
+    height:3rem;
+    cursor:pointer;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    width:23rem;
+    box-shadow: 2px 2px 10px rgba(129, 129, 129, 0.541) ;
+    position: relative;
+    top: 100%;
+    left:100%;
+    display: none;
+    transform: translate(-100%,-100%);
+    z-index: 1000;
+}
+.show-minimized-window
+{
+    display: block;
+}
+.minimized-window{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.min-username
+{
+    color:black;
+    margin-left:0.4rem
+}

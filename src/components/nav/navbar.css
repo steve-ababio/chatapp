@@ -1,0 +1,28 @@
+.main-header
+{
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.295);
+    --nav-txt-primary-color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px 0;
+}
+.main-title{
+    font-weight: 600;
+    color:var(--nav-txt-primary-color);
+    flex-grow: 2;
+}
+
+.nav-ctn{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    color:var(--nav-txt-primary-color);
+    width: 100%;
+    flex-grow:1 ;
+}
+.nav-link > *{
+    text-decoration: none;
+    color:var(--nav-txt-primary-color)
+}
