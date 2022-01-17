@@ -9,7 +9,7 @@ const OnlineUsersSideBarHeader = ({username})=>{
     return (
         <div className="sidebar-header">
             <span className="online-user-username">{username}</span>
-            <span className="logout" onClick={logout}><FaPowerOff color="red" size={17}/></span>
+            <span className="logout" title="logout" onClick={logout}><FaPowerOff color="red" size={17}/></span>
         </div>  
     )
 }

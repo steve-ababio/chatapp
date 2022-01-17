@@ -39,7 +39,7 @@ const Chatwindow = (props)=>{
         videostreamref.current.srcObject = null;
         setVideoStreamReady(false);  
      }
-    const answerIncomingCall = (call,videostream)=>{
+    const answerIncomingCall = (call,videostream,e)=>{
         call.answer(videostream);
         setCallInitiator(true);                           
     }
@@ -57,8 +57,8 @@ const Chatwindow = (props)=>{
                        const videostream = await getCameraDevice(); 
                        setVideoStreamReady(true);   
                        setCallInitiator(false);
-                       answercallref.current.addEventListener('click',answerIncomingCall,call,videostream); 
-                       receiverterminatecallref.current.addEventListener('click',terminateCallEvent,call,conn);
+                       answercallref.current.addEventListener('click',answerIncomingCall.bind(null,call,videostream)); 
+                       receiverterminatecallref.current.addEventListener('click',terminateCallEvent.bind(null,call,conn));
                        videostreamref.current.srcObject = videostream; 
                        call.on(peerevents.CALL_STREAM,remotevideostream=>
                        {
@@ -143,7 +143,8 @@ const Chatwindow = (props)=>{
             peerconn.on(peerevents.PEER_CONN_OPENED,()=>{
                 const call = peer.current.call(props.userselectedPeerID,videostream);             
                 setVideoStreamReady(true);
-                setCallInitiator(true);                                                    
+                setCallInitiator(true);   
+                console.log("calling")                                                 
                 videostreamref.current.srcObject = videostream;
 
                 call.on(peerevents.CALL_STREAM,remotevideostream=>{
