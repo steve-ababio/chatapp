@@ -1,4 +1,4 @@
-.chat-list-info{
+.sidebar-header{
     padding:0.7rem 0;
     display:flex;
     justify-content: space-around;
@@ -8,10 +8,12 @@
     color:white;
     border-bottom:1px rgba(182, 182, 182, 0.479) solid; 
 }
-
+.online-user-username{
+    font-size: 1.2rem;
+}
 .logout{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     cursor:pointer;
 }

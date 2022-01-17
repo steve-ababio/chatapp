@@ -8,7 +8,7 @@ const WithAuth = (Wrappedcomponent,URL)=>{
         const [username,handleUsername] = useForm();
         const [password,handlePassword] = useForm();
         const usercredentials = Object.assign({},{username,password});           
-       const[submitCredentials,isloginprocessing,response] = useAuthentication(URL.LOGIN_URL,usercredentials);
+       const[submitCredentials,isloginprocessing,response] = useAuthentication(URL,usercredentials);
        
         return(
             <Wrappedcomponent

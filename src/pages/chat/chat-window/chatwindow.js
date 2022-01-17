@@ -59,7 +59,6 @@ const Chatwindow = (props)=>{
                        setCallInitiator(false);
                        answercallref.current.addEventListener('click',answerIncomingCall,call,videostream); 
                        receiverterminatecallref.current.addEventListener('click',terminateCallEvent,call,conn);
-
                        videostreamref.current.srcObject = videostream; 
                        call.on(peerevents.CALL_STREAM,remotevideostream=>
                        {
@@ -82,11 +81,11 @@ const Chatwindow = (props)=>{
                 })
             })
          }
-         const callterminatebtn = callerterminatecallref;
-         const receiverterminatecallbtn = receiverterminatecallref; 
-         return ()=>{
-            callterminatebtn.removeEventListener("click",terminateCallEvent);
-            receiverterminatecallbtn.removeEventListener("click",terminateCallEvent);
+         return ()=>{             
+            console.log(callerterminatecallref)
+            console.log(receiverterminatecallref)
+            // callerterminatecallref.current.removeEventListener("click",terminateCallEvent);
+            // receiverterminatecallref.current.removeEventListener("click",terminateCallEvent);
          }
     },[props.websocket])
 
